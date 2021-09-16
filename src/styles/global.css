@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.light {
+  --bg: #fff;
+  --accent: #ececec;
+  --muted: #5c5c5c;
+  --muted-dark: #a0a0a0;
+  --primary: #7C3AED;
+  --text: #101010;
+  --highlight: #dcdcdc;
+  --highlight-hover: #cccccc;
+}
+
+.dark {
+  --bg: #050505;
+  --accent: #151515;
+  --muted: #bababa;
+  --muted-dark: #454545;
+  --primary: #A78BFA;
+  --text: #fff;
+  --highlight: #303030;
+  --highlight-hover: #404040;
+}
+
+
+.ul-anim {
+  text-decoration-color: transparent;
+  text-underline-offset: 0.3em;
+}
+
+.ul-anim:hover {
+  text-decoration-color: inherit;
+}
+
+a.anchor {
+  color: var(--muted);
+}
+
+.navbar-item {
+  @apply hover:text-custom-text duration-200 my-1 text-lg 
+}
+/* These have to be separated so that it applies correctly */
+.navbar-color {
+  @apply text-custom-muted
+}
+
+.link-card-header {
+  @apply text-custom-text hover:text-custom-primary transition underline flex items-center
+}
