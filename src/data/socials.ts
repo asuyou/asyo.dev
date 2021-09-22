@@ -6,6 +6,7 @@ import { CgLink } from "@react-icons/all-files/cg/CgLink"
 import { CgScreen } from "@react-icons/all-files/cg/CgScreen"
 import { IoLogoDiscord } from "@react-icons/all-files/io5/IoLogoDiscord"
 import { IoLogoGithub } from "@react-icons/all-files/io5/IoLogoGithub"
+import { CgMail } from "@react-icons/all-files/cg/CgMail"
 import { SiSteam } from "@react-icons/all-files/si/SiSteam"
 
 export const SocialData: Social[] = [
@@ -13,7 +14,7 @@ export const SocialData: Social[] = [
     name: "Discord",
     type: "open",
     href: "https://discordapp.com/users/350708685481312257",
-    data: "asyo#0001",
+    data: "asyo#4887",
     desc: "A link to my discord profile",
     Icon: IoLogoDiscord,
     uid: nanoid(),
@@ -24,6 +25,15 @@ export const SocialData: Social[] = [
     href: "https://github.com/asuyou",
     desc: "It's not got much since I just migrated",
     Icon: IoLogoGithub,
+    uid: nanoid(),
+  },
+  {
+    name: "Email",
+    type: "open",
+    href: "mailto:a@asyo.dev",
+    data: "a@asyo.dev",
+    desc: "My public email address",
+    Icon: CgMail,
     uid: nanoid(),
   },
   {
